@@ -147,5 +147,12 @@ export const categories: Category[] = [
     description: "Automated support, ticket routing, sentiment analysis, and self-service knowledge bases. AI that handles routine inquiries so your team can focus on complex issues.",
     whatToLookFor: "Escalation handling is the make-or-break feature. The best tools know when to hand off to a human. Check customization options and how well the AI understands your specific product/domain.",
     icon: "🎧"
+  },
+  {
+    slug: "security",
+    name: "AI Security & Compliance Tools",
+    description: "Threat detection, vulnerability scanning, compliance monitoring, and security automation. AI that helps organizations stay ahead of threats and meet regulatory requirements.",
+    whatToLookFor: "False positive rates matter as much as detection rates. The best security tools reduce alert fatigue, not add to it. Check integration with your existing security stack and compliance framework coverage.",
+    icon: "🔒"
   }
 ]
