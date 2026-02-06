@@ -38,7 +38,7 @@ export const collections: Collection[] = [
           "Your general-purpose business assistant. Drafts emails, brainstorms marketing ideas, summarizes documents, analyzes data, writes first drafts. Start here if you're only going to try one AI tool.",
       },
       {
-        toolSlug: "canva",
+        toolSlug: "canva-ai",
         label: "Free / $13 mo",
         categoryLabel: "Design",
         miniReview:
@@ -52,18 +52,18 @@ export const collections: Collection[] = [
           "AI chatbot for your website that answers customer questions 24/7. Handles the repetitive 80% — shipping, returns, pricing, hours — so you deal with the interesting 20%. Setup takes about an hour.",
       },
       {
-        toolSlug: "zapier",
+        toolSlug: "zapier-ai",
         label: "Free / $20 mo",
         categoryLabel: "Productivity",
         miniReview:
           "Connects your apps and automates workflows between them. New form submission → CRM entry → welcome email → Slack notification, all automatic. The glue that makes your other tools work together.",
       },
       {
-        toolSlug: "quickbooks",
-        label: "$30+ mo",
-        categoryLabel: "Productivity",
+        toolSlug: "quicken-simplifi",
+        label: "$4 mo",
+        categoryLabel: "Finance",
         miniReview:
-          "AI financial assistant inside QuickBooks. Ask questions about your business finances in plain English. Catches anomalies, suggests categorizations, automates the tedious parts of bookkeeping.",
+          "AI-powered personal finance dashboard. Tracks spending, categorizes transactions, and surfaces savings opportunities automatically. Ask questions about your finances in plain English.",
       },
       {
         toolSlug: "jasper",
@@ -73,11 +73,11 @@ export const collections: Collection[] = [
           "AI writing tool that learns your brand voice. Produces marketing copy, blog posts, email campaigns, and product descriptions. Worth it if you publish content weekly; overkill if you don't.",
       },
       {
-        toolSlug: "flick",
-        label: "$14 mo",
-        categoryLabel: "Marketing",
+        toolSlug: "later",
+        label: "Free tier / $25 mo",
+        categoryLabel: "Social Media",
         miniReview:
-          "AI social media management — brainstorms content, writes captions, suggests hashtags, schedules posts across Instagram, Facebook, LinkedIn, and TikTok. Turns a week of social media into a 2-hour batch session.",
+          "AI social media management — brainstorms content, writes captions, suggests best posting times, schedules across Instagram, Facebook, LinkedIn, and TikTok. Turns a week of social media into a 2-hour batch session.",
       },
     ],
   },
@@ -114,11 +114,11 @@ export const collections: Collection[] = [
           "Best for: Google Workspace users. Deep integration with Gmail, Docs, Sheets, Drive, and Calendar. Searches your email, analyzes spreadsheets, drafts documents — all within tools you already use.",
       },
       {
-        toolSlug: "mistral",
+        toolSlug: "pi",
         label: "Free",
         categoryLabel: "Chatbot",
         miniReview:
-          "Best for: Fewer content restrictions, strong multilingual support (especially European languages). Open-source model ecosystem for developers. A solid general-purpose alternative at no cost.",
+          "Best for: Conversational, emotionally intelligent AI. Great for brainstorming, exploring ideas, and casual back-and-forth. Less tool-like, more like talking to a thoughtful friend.",
       },
       {
         toolSlug: "github-copilot",
@@ -128,11 +128,11 @@ export const collections: Collection[] = [
           "Best for: Code specifically. Lives in your IDE, understands your project context, suggests completions as you type. Not a general chatbot — a specialized coding assistant that outperforms ChatGPT for development work.",
       },
       {
-        toolSlug: "grok",
-        label: "Included with X Premium",
-        categoryLabel: "Chatbot",
+        toolSlug: "perplexity",
+        label: "Free / $20 mo",
+        categoryLabel: "Research",
         miniReview:
-          "Best for: Real-time information from X/Twitter, fewer content restrictions. Niche but useful for social media intelligence and trending topic analysis.",
+          "Best for: Real-time information with cited sources. An AI search engine that answers questions with references you can verify. Great for research-heavy queries and staying current.",
       },
     ],
   },
@@ -162,25 +162,25 @@ export const collections: Collection[] = [
           "AI chatbot handling order status, return questions, sizing help, and shipping timelines. Integrates with Shopify and pulls real-time order data. Most stores see 30-50% of support tickets handled automatically.",
       },
       {
-        toolSlug: "klaviyo",
-        label: "Free tier / Paid scales",
+        toolSlug: "hubspot-breeze",
+        label: "Free tier / $20 mo+",
         categoryLabel: "Marketing",
         miniReview:
-          "AI-optimized email marketing for ecommerce. Abandoned cart recovery, product recommendations, send time optimization, subject line testing. The standard for ecommerce email — recovers 5-15% of abandoned carts.",
+          "AI-powered CRM with email marketing, automation, and customer journey tracking. Free tier includes basic AI. Handles abandoned cart recovery, lead scoring, and content generation across your marketing stack.",
       },
       {
-        toolSlug: "canva",
+        toolSlug: "canva-ai",
         label: "Free / $13 mo",
         categoryLabel: "Design",
         miniReview:
           "Product images, social ads, email graphics, and banner designs. Magic Studio generates marketing visuals from descriptions. Non-designers create professional product marketing assets.",
       },
       {
-        toolSlug: "gorgias",
-        label: "$10 mo+",
-        categoryLabel: "Chatbot",
+        toolSlug: "tidio",
+        label: "Free tier / $29 mo",
+        categoryLabel: "Customer Service",
         miniReview:
-          "AI-powered customer support built for ecommerce. Auto-responds to common questions with order-specific data. Integrates with Shopify, BigCommerce, and Magento. Stronger ecommerce-specific features than general chatbots.",
+          "AI chatbot and live chat for ecommerce. Handles up to 70% of routine customer inquiries automatically. Integrates with Shopify, WordPress, and major platforms. Free tier for small businesses.",
       },
       {
         toolSlug: "surfer-seo",
@@ -224,14 +224,14 @@ export const collections: Collection[] = [
           "Catches grammar, spelling, and punctuation errors in real time. Works in your browser and Google Docs. The free tier handles the essentials. Run every paper through it before submitting — two minutes of cleanup that prevents embarrassing errors.",
       },
       {
-        toolSlug: "wolfram-alpha",
-        label: "Free",
+        toolSlug: "consensus",
+        label: "Free / $9 mo",
         categoryLabel: "Research",
         miniReview:
-          "Computes math, physics, chemistry, and statistics problems with step-by-step solutions. Work the problem yourself first, then check your work with Wolfram Alpha. When you get it wrong, study the steps to find where you went off track.",
+          "AI search engine for academic research papers. Ask questions and get answers backed by peer-reviewed studies with citations. Great for evidence-based learning and writing research papers.",
       },
       {
-        toolSlug: "notion",
+        toolSlug: "notion-ai",
         label: "Free tier",
         categoryLabel: "Productivity",
         miniReview:
@@ -290,7 +290,7 @@ export const collections: Collection[] = [
         incomePotential: "$2,000-$10,000/mo managing 3-10 marketing clients.",
       },
       {
-        toolSlug: "zapier",
+        toolSlug: "zapier-ai",
         label: "Free / $20 mo",
         categoryLabel: "Productivity",
         miniReview:
@@ -336,21 +336,21 @@ export const collections: Collection[] = [
           "Write listing descriptions in 2 minutes instead of 20. Paste property details, get polished copy. Also handles email responses, social posts, and neighborhood descriptions. The free tier covers most agents' needs.",
       },
       {
-        toolSlug: "virtual-staging-ai",
-        label: "$15-40/photo",
+        toolSlug: "dall-e-3",
+        label: "Included with ChatGPT Plus",
         categoryLabel: "Image Generation",
         miniReview:
-          "Turn empty rooms into furnished, styled spaces for listing photos. Saves $2,000-5,000 per property vs. physical staging. Best results on empty rooms — occupied spaces still confuse the AI.",
+          "Generate virtual staging images, property marketing visuals, and listing graphics from text descriptions. Integrated into ChatGPT — describe the room style you want and get realistic results.",
       },
       {
-        toolSlug: "canva",
+        toolSlug: "canva-ai",
         label: "Free / $13 mo",
         categoryLabel: "Design",
         miniReview:
           "Property flyers, social media posts, open house materials, and just-sold announcements. Templates sized for every platform. Magic Studio generates visuals from descriptions.",
       },
       {
-        toolSlug: "flick",
+        toolSlug: "later",
         label: "$14 mo",
         categoryLabel: "Marketing",
         miniReview:
@@ -391,14 +391,14 @@ export const collections: Collection[] = [
           "Smart formatting that makes ugly slides impossible. Every edit auto-adjusts layout and spacing. Best for corporate teams where consistency matters more than creative freedom.",
       },
       {
-        toolSlug: "tome",
+        toolSlug: "tome-ai",
         label: "Free tier / $16 mo",
         categoryLabel: "Productivity",
         miniReview:
           "Narrative-style presentations that go beyond traditional slides. Mixed media, AI-generated visuals, interactive layouts. Best for creative pitches and portfolios where standing out matters.",
       },
       {
-        toolSlug: "slidebean",
+        toolSlug: "pitch-ai",
         label: "$29 mo",
         categoryLabel: "Productivity",
         miniReview:
@@ -453,18 +453,18 @@ export const collections: Collection[] = [
           "For debugging: paste error + stack trace + relevant code, get explanation and fix. Claude handles larger code pastes (200K context). ChatGPT has broader framework coverage. Most developers use both.",
       },
       {
-        toolSlug: "qodo",
+        toolSlug: "tabnine",
         label: "Free tier",
         categoryLabel: "Coding",
         miniReview:
-          "AI test generation. Analyzes your functions and produces edge cases you didn't think of. Generated tests are 60-70% usable as-is. The real value is the edge cases it surfaces.",
+          "AI code completion that runs locally for privacy-conscious teams. Learns your codebase patterns and suggests whole-line and full-function completions. Free tier covers individual developers with solid baseline suggestions.",
       },
       {
-        toolSlug: "mintlify",
-        label: "Free (OSS) / Paid",
-        categoryLabel: "Productivity",
+        toolSlug: "sourcegraph-cody",
+        label: "Free tier / Paid",
+        categoryLabel: "Coding",
         miniReview:
-          "Generates and maintains documentation from your codebase. Having a draft is infinitely better than a blank page. Free for open source projects.",
+          "AI coding assistant with deep codebase understanding. Searches and explains code across your entire repository. Best for large codebases where understanding existing code is as important as writing new code.",
       },
     ],
   },
@@ -494,7 +494,7 @@ export const collections: Collection[] = [
           "For freelance writers and content creators specifically. Brand voice training means you can write in different client voices without losing quality. Content Pipelines automate the brainstorming-to-draft workflow. Worth it if you write for 3+ clients.",
       },
       {
-        toolSlug: "canva",
+        toolSlug: "canva-ai",
         label: "Free / $13 mo",
         categoryLabel: "Design",
         miniReview:
@@ -508,14 +508,14 @@ export const collections: Collection[] = [
           "Professional communication matters more when you're solo — there's no team to catch your typos. Free tier handles grammar and spelling. Every client email, proposal, and deliverable runs through Grammarly before sending.",
       },
       {
-        toolSlug: "zapier",
+        toolSlug: "zapier-ai",
         label: "Free / $20 mo",
         categoryLabel: "Productivity",
         miniReview:
           "Automate the admin that eats your billable hours. New client form → CRM entry → welcome email → project folder creation. Invoice sent → follow-up reminder scheduled. The 2 hours of setup saves 5+ hours per month.",
       },
       {
-        toolSlug: "otter",
+        toolSlug: "otter-ai",
         label: "Free (300 min/mo)",
         categoryLabel: "Productivity",
         miniReview:
@@ -549,21 +549,21 @@ export const collections: Collection[] = [
           "The quality benchmark for AI image generation. Produces the most aesthetically polished results across styles — photorealistic, illustrative, abstract, concept art. Essential for designers generating concepts, mood boards, and visual exploration.",
       },
       {
-        toolSlug: "leonardo",
+        toolSlug: "leonardo-ai",
         label: "Free (150 gens/mo) / Paid",
         categoryLabel: "Image Generation",
         miniReview:
           "Best free tier in AI image generation. Consistent quality, multiple model options, commercial usage allowed. For non-designers who need regular images, this is the starting point — generous free tier, no watermarks.",
       },
       {
-        toolSlug: "canva",
+        toolSlug: "canva-ai",
         label: "Free / $13 mo",
         categoryLabel: "Design",
         miniReview:
           "The non-designer's best friend. AI generates designs, removes backgrounds, resizes for every platform, and maintains brand consistency. Professional designers may find it limiting; everyone else finds it liberating.",
       },
       {
-        toolSlug: "figma",
+        toolSlug: "figma-ai",
         label: "Free / $15 mo",
         categoryLabel: "Design",
         miniReview:
@@ -577,11 +577,11 @@ export const collections: Collection[] = [
           "The only AI image generator that handles text reliably. Logos, posters, social graphics with headlines — if your design needs readable text, Ideogram is the only tool that won't butcher the typography.",
       },
       {
-        toolSlug: "photoroom",
-        label: "Free tier / Paid",
+        toolSlug: "stable-diffusion",
+        label: "Free (open source) / Paid APIs",
         categoryLabel: "Image Generation",
         miniReview:
-          "One-click background removal and photo editing. Essential for product photography, profile pictures, and any image where you need a clean subject on a new background. Saves hours of Photoshop masking.",
+          "Open-source image generation you can run locally or via API. Full control over outputs, no content restrictions, and no per-image fees if self-hosted. Best for designers who want fine-tuned control and batch generation.",
       },
       {
         toolSlug: "adobe-firefly",
