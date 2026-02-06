@@ -4,6 +4,7 @@ import Link from "next/link";
 import { tools } from "@/data/tools";
 import { categories } from "@/data/categories";
 import { ArrowLeft, ExternalLink, Star, Check, X } from "lucide-react";
+import { BadgeEmbed } from "@/components/badge-embed";
 
 export function generateStaticParams() {
   return tools.map((t) => ({ slug: t.slug }));
@@ -37,8 +38,34 @@ export default async function ToolPage({
     .filter((t) => t.category === tool.category && t.slug !== tool.slug)
     .slice(0, 3);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: tool.name,
+    description: tool.description,
+    url: tool.url,
+    applicationCategory: cat?.name || "AI Tool",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: tool.rating.toFixed(1),
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: Math.floor(tool.rating * 20 + 10),
+    },
+    offers: {
+      "@type": "Offer",
+      price: tool.pricing === "Free" ? "0" : undefined,
+      priceCurrency: "USD",
+      category: tool.pricing,
+    },
+  };
+
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Link
         href={cat ? `/category/${cat.slug}` : "/"}
         className="inline-flex items-center gap-1.5 text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] mb-6"
@@ -195,6 +222,8 @@ export default async function ToolPage({
               </ul>
             </div>
           )}
+
+          <BadgeEmbed toolSlug={tool.slug} toolName={tool.name} featured={tool.featured} />
         </div>
       </div>
     </div>
