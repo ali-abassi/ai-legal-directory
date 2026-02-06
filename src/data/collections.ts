@@ -399,10 +399,10 @@ export const collections: Collection[] = [
       },
       {
         toolSlug: "pitch-ai",
-        label: "$29 mo",
+        label: "$22 mo",
         categoryLabel: "Productivity",
         miniReview:
-          "Built specifically for pitch decks. Templates based on successful investor presentations. AI coaches you on structure and what information to include. Best for founders raising funding.",
+          "Collaborative presentation tool with AI-assisted deck creation. Smart templates, real-time collaboration, and analytics that show how viewers engage with your slides. Best for teams that present frequently.",
       },
       {
         toolSlug: "chatgpt",
