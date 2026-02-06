@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer";
 export const metadata: Metadata = {
   title: "AI Tools Directory — Find the Best AI Tools for Any Task",
   description:
-    "Browse 1,000+ AI tools organized by use case. Compare pricing, read honest reviews, and find the right AI tool in seconds. Updated daily.",
+    "Browse 100+ AI tools organized by use case. Compare pricing, read honest reviews, and find the right AI tool in seconds. Updated daily.",
   keywords: [
     "ai tools",
     "best ai tools",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Tools Directory — Find the Best AI Tools for Any Task",
     description:
-      "Browse 1,000+ AI tools organized by use case. Compare pricing, read honest reviews, and find the right AI tool in seconds.",
+      "Browse 100+ AI tools organized by use case. Compare pricing, read honest reviews, and find the right AI tool in seconds.",
     type: "website",
   },
 };
