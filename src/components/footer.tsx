@@ -19,6 +19,9 @@ export function Footer() {
               <li><Link href="/" className="hover:text-[var(--foreground)]">Browse All Tools</Link></li>
               <li><Link href="/search" className="hover:text-[var(--foreground)]">Search</Link></li>
               <li><Link href="/submit" className="hover:text-[var(--foreground)]">Submit a Tool</Link></li>
+              <li><Link href="/new" className="hover:text-[var(--foreground)]">New Tools</Link></li>
+              <li><Link href="/free" className="hover:text-[var(--foreground)]">Free Tools</Link></li>
+              <li><Link href="/blog" className="hover:text-[var(--foreground)]">Blog</Link></li>
             </ul>
           </div>
           <div>
