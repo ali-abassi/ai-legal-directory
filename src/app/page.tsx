@@ -3,6 +3,7 @@ import { Search, ArrowRight, Sparkles, RefreshCw, Shield } from "lucide-react";
 import { tools } from "@/data/tools";
 import { categories } from "@/data/categories";
 import { ToolCard } from "@/components/tool-card";
+import { NewsletterSignup } from "@/components/newsletter-signup";
 
 export default function HomePage() {
   const featuredTools = tools.filter((t) => t.featured).slice(0, 6);
@@ -114,6 +115,11 @@ export default function HomePage() {
             );
           })}
         </div>
+      </section>
+
+      {/* Newsletter Signup */}
+      <section className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-12">
+        <NewsletterSignup variant="homepage" />
       </section>
 
       {/* Social Proof */}

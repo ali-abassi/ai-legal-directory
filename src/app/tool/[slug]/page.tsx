@@ -5,6 +5,7 @@ import { tools } from "@/data/tools";
 import { categories } from "@/data/categories";
 import { ArrowLeft, ExternalLink, Star, Check, X } from "lucide-react";
 import { BadgeEmbed } from "@/components/badge-embed";
+import { NewsletterSignup } from "@/components/newsletter-signup";
 
 export function generateStaticParams() {
   return tools.map((t) => ({ slug: t.slug }));
@@ -224,6 +225,8 @@ export default async function ToolPage({
           )}
 
           <BadgeEmbed toolSlug={tool.slug} toolName={tool.name} featured={tool.featured} />
+
+          <NewsletterSignup variant="tool" />
         </div>
       </div>
     </div>

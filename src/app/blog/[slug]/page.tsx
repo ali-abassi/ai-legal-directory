@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog-posts";
 import { ArrowLeft } from "lucide-react";
+import { NewsletterSignup } from "@/components/newsletter-signup";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -145,17 +146,8 @@ export default async function BlogPostPage({
 
       <article className="mt-8">{renderMarkdown(post.content)}</article>
 
-      <div className="mt-12 rounded-xl border bg-[var(--muted)] p-6 text-center">
-        <p className="font-semibold">Looking for more AI tools?</p>
-        <p className="mt-1 text-sm text-[var(--muted-foreground)]">
-          Browse our full directory of 60+ curated AI tools.
-        </p>
-        <Link
-          href="/search"
-          className="mt-3 inline-flex rounded-full bg-[var(--primary)] px-5 py-2 text-sm font-semibold text-[var(--primary-foreground)] hover:opacity-90 transition"
-        >
-          Browse Tools
-        </Link>
+      <div className="mt-12">
+        <NewsletterSignup variant="blog" />
       </div>
     </div>
   );
