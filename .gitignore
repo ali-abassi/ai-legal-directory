@@ -1,6 +1,8 @@
 .next
+.next_old
 out
 node_modules
+node_modules_old
 .vercel
 .env*.local
 *.tsbuildinfo
