@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
+import { SubmitForm } from "@/components/submit-form";
 
 export const metadata: Metadata = {
   title: "Submit Your AI Tool — Get Listed in Our Directory",
@@ -82,98 +83,7 @@ export default function SubmitPage() {
       </div>
 
       {/* Submit Form */}
-      <div className="mt-12">
-        <h2 className="text-xl font-bold mb-6">Submit Your Tool</h2>
-        <form className="space-y-5" action="#">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label className="block text-sm font-medium mb-1.5">Tool Name *</label>
-              <input
-                type="text"
-                className="w-full rounded-lg border bg-[var(--background)] px-4 py-2.5 text-sm"
-                placeholder="e.g. SuperAI Writer"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-1.5">Website URL *</label>
-              <input
-                type="url"
-                className="w-full rounded-lg border bg-[var(--background)] px-4 py-2.5 text-sm"
-                placeholder="https://..."
-              />
-            </div>
-          </div>
-          <div>
-            <label className="block text-sm font-medium mb-1.5">Category *</label>
-            <select className="w-full rounded-lg border bg-[var(--background)] px-4 py-2.5 text-sm">
-              <option value="">Select a category</option>
-              <option>AI Writing</option>
-              <option>AI Image Generation</option>
-              <option>AI Video</option>
-              <option>AI Audio</option>
-              <option>AI Coding</option>
-              <option>AI Chatbots</option>
-              <option>AI Agents</option>
-              <option>AI Business</option>
-              <option>AI Marketing</option>
-              <option>AI Data</option>
-              <option>AI Design</option>
-              <option>AI Education</option>
-              <option>AI Finance</option>
-              <option>AI Healthcare</option>
-              <option>AI Legal</option>
-              <option>AI Productivity</option>
-              <option>AI Research</option>
-              <option>AI Social Media</option>
-              <option>AI Sales</option>
-              <option>AI Customer Service</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm font-medium mb-1.5">Description *</label>
-            <textarea
-              rows={4}
-              className="w-full rounded-lg border bg-[var(--background)] px-4 py-2.5 text-sm"
-              placeholder="What does your tool do? Who is it for?"
-            />
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label className="block text-sm font-medium mb-1.5">Pricing Model</label>
-              <select className="w-full rounded-lg border bg-[var(--background)] px-4 py-2.5 text-sm">
-                <option>Free</option>
-                <option>Freemium</option>
-                <option>Paid</option>
-                <option>Free Trial</option>
-              </select>
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-1.5">Your Email *</label>
-              <input
-                type="email"
-                className="w-full rounded-lg border bg-[var(--background)] px-4 py-2.5 text-sm"
-                placeholder="you@company.com"
-              />
-            </div>
-          </div>
-          <div>
-            <label className="flex items-center gap-2 text-sm">
-              <input type="checkbox" className="rounded border" />
-              I&apos;m interested in a Featured Listing ($49/mo)
-            </label>
-          </div>
-          <button
-            type="submit"
-            className="rounded-full bg-[var(--primary)] px-8 py-3 text-sm font-semibold text-[var(--primary-foreground)] hover:opacity-90 transition"
-          >
-            Submit Your Tool — Free
-          </button>
-          <p className="text-xs text-[var(--muted-foreground)]">
-            We review every submission. Approval typically takes 24-48 hours. We&apos;ll email you
-            when your tool is live.
-          </p>
-        </form>
-      </div>
+      <SubmitForm />
     </div>
   );
 }
