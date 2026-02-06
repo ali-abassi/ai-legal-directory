@@ -23,6 +23,9 @@ export function Header() {
             <Link href="/about" className="hover:text-[var(--primary)] transition-colors">
               About
             </Link>
+            <Link href="/blog" className="hover:text-[var(--primary)] transition-colors">
+              Blog
+            </Link>
             <Link href="/submit" className="hover:text-[var(--primary)] transition-colors">
               Submit a Tool
             </Link>
@@ -47,6 +50,7 @@ export function Header() {
           <nav className="md:hidden pb-4 flex flex-col gap-3 text-sm font-medium">
             <Link href="/" onClick={() => setMobileOpen(false)}>Browse Tools</Link>
             <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
+            <Link href="/blog" onClick={() => setMobileOpen(false)}>Blog</Link>
             <Link href="/submit" onClick={() => setMobileOpen(false)}>Submit a Tool</Link>
             <Link href="/search" onClick={() => setMobileOpen(false)} className="flex items-center gap-1.5">
               <Search className="h-4 w-4" /> Search tools...
