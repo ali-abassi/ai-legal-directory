@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, ArrowRight, Sparkles, RefreshCw, Shield } from "lucide-react";
+import { Search, ArrowRight, Scale, Shield, Eye } from "lucide-react";
 import { tools } from "@/data/tools";
 import { categories } from "@/data/categories";
 import { ToolCard } from "@/components/tool-card";
@@ -16,20 +16,21 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-[var(--accent)]/50 to-[var(--background)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
-            Every AI tool.{" "}
-            <span className="text-[var(--primary)]">One search.</span>
+            Every legal AI tool.{" "}
+            <span className="text-[var(--primary)]">Vetted by professionals.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-[var(--muted-foreground)]">
-            Stop wasting afternoons testing AI tools that don&apos;t deliver. We catalog,
-            categorize, and honestly review thousands of AI tools so you find the
-            right one in seconds — not days.
+            The legal AI market is exploding — but finding the right tool for your practice
+            is harder than it should be. We catalog, vet, and honestly review AI tools built
+            specifically for legal work. Contract review, legal research, document drafting,
+            compliance, e-discovery — find what fits your practice in minutes.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/search"
               className="inline-flex items-center gap-2 rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-semibold text-[var(--primary-foreground)] shadow-lg hover:opacity-90 transition"
             >
-              <Search className="h-4 w-4" /> Browse Tools
+              <Search className="h-4 w-4" /> Browse Legal AI Tools
             </Link>
             <Link
               href="/submit"
@@ -43,7 +44,7 @@ export default function HomePage() {
             <span className="text-[var(--border)]">|</span>
             <span className="font-semibold text-[var(--foreground)]">{totalCategories}</span> categories
             <span className="text-[var(--border)]">|</span>
-            Updated <span className="font-semibold text-[var(--foreground)]">daily</span>
+            Updated <span className="font-semibold text-[var(--foreground)]">weekly</span>
           </div>
         </div>
       </section>
@@ -52,27 +53,29 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="rounded-xl border bg-[var(--card)] p-6">
-            <Sparkles className="h-8 w-8 text-[var(--primary)]" />
-            <h3 className="mt-4 font-semibold text-lg">Search by what you actually need</h3>
+            <Scale className="h-8 w-8 text-[var(--primary)]" />
+            <h3 className="mt-4 font-semibold text-lg">Built for legal professionals, not tech enthusiasts</h3>
             <p className="mt-2 text-sm text-[var(--muted-foreground)]">
-              Not another alphabetical dump. Tell us the job — writing, coding, design, data — and
-              we surface the tools that actually do it well. Filter by price, rating, and use case.
-            </p>
-          </div>
-          <div className="rounded-xl border bg-[var(--card)] p-6">
-            <RefreshCw className="h-8 w-8 text-[var(--primary)]" />
-            <h3 className="mt-4 font-semibold text-lg">Updated daily, not annually</h3>
-            <p className="mt-2 text-sm text-[var(--muted-foreground)]">
-              AI moves fast. Tools launch, pivot, and die weekly. Our directory tracks it all so
-              you&apos;re never recommending something that sunset three months ago.
+              This isn&apos;t a general AI directory with a &quot;legal&quot; filter. Every tool here is
+              purpose-built for legal work. We understand the difference between contract analysis and
+              contract management — and we categorize accordingly.
             </p>
           </div>
           <div className="rounded-xl border bg-[var(--card)] p-6">
             <Shield className="h-8 w-8 text-[var(--primary)]" />
-            <h3 className="mt-4 font-semibold text-lg">Real reviews, not paid placements</h3>
+            <h3 className="mt-4 font-semibold text-lg">Vetted for security and compliance</h3>
             <p className="mt-2 text-sm text-[var(--muted-foreground)]">
-              Every featured tool is tested. We don&apos;t sell top spots. What you see is what
-              performs. Sponsored listings are clearly labeled — always.
+              Legal work demands data security. We flag each tool&apos;s SOC 2 status, data handling
+              practices, and whether it&apos;s suitable for privileged communications. Because your
+              client data isn&apos;t optional.
+            </p>
+          </div>
+          <div className="rounded-xl border bg-[var(--card)] p-6">
+            <Eye className="h-8 w-8 text-[var(--primary)]" />
+            <h3 className="mt-4 font-semibold text-lg">Honest about limitations</h3>
+            <p className="mt-2 text-sm text-[var(--muted-foreground)]">
+              AI in law has real constraints — hallucinated citations, jurisdiction gaps, confidentiality
+              risks. We document what each tool does well and where it falls short. No vendor fluff.
             </p>
           </div>
         </div>
@@ -109,7 +112,7 @@ export default function HomePage() {
                 className="flex flex-col items-center gap-2 rounded-xl border bg-[var(--card)] p-5 text-center hover:shadow-md hover:border-[var(--primary)]/30 transition-all"
               >
                 <span className="text-3xl">{cat.icon}</span>
-                <span className="font-medium text-sm">{cat.name.replace("AI ", "").replace(" Tools", "")}</span>
+                <span className="font-medium text-sm">{cat.name}</span>
                 <span className="text-xs text-[var(--muted-foreground)]">{count} tools</span>
               </Link>
             );
@@ -126,23 +129,23 @@ export default function HomePage() {
       <section className="border-t bg-[var(--muted)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 text-center">
           <p className="text-[var(--muted-foreground)]">
-            Trusted by developers, marketers, and founders finding their next AI tool.
+            Trusted by lawyers, paralegals, and legal ops teams finding the right AI tools for their practice.
           </p>
         </div>
       </section>
 
       {/* Bottom CTA */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h2 className="text-2xl font-bold">Can&apos;t find what you need?</h2>
+        <h2 className="text-2xl font-bold">Built a legal AI tool?</h2>
         <p className="mt-3 text-[var(--muted-foreground)]">
-          We add new tools every day. Tell us what you&apos;re looking for and we&apos;ll point you
-          in the right direction.
+          If it&apos;s genuinely useful for legal professionals, we want it in the directory.
+          Listing is free.
         </p>
         <Link
           href="/submit"
           className="mt-6 inline-flex items-center gap-2 rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-semibold text-[var(--primary-foreground)] shadow-lg hover:opacity-90 transition"
         >
-          Request a Tool
+          Submit Your Tool
         </Link>
       </section>
 

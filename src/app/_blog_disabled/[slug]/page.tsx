@@ -5,6 +5,8 @@ import { blogPosts } from "@/data/blog-posts";
 import { ArrowLeft } from "lucide-react";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
 }
@@ -18,7 +20,7 @@ export async function generateMetadata({
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} — AI Tools Directory`,
+    title: `${post.title} — AI Legal Tools`,
     description: post.metaDescription,
   };
 }

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
 
-const SITE_URL = "https://ai-tools-directory-7a0.pages.dev";
+const SITE_URL = "https://ailegal.team";
 
 function getBadgeSvg(toolName: string, featured: boolean, theme: "light" | "dark") {
   const bg = theme === "light" ? "%23f8fafc" : "%231e293b";
@@ -18,7 +18,7 @@ function getBadgeSvg(toolName: string, featured: boolean, theme: "light" | "dark
     : (theme === "light" ? "%23ffffff" : "%230f172a");
   const label = featured ? "Featured on" : "Listed on";
 
-  return `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="200" height="54" fill="none"><rect width="199" height="53" x=".5" y=".5" rx="7" fill="${bg}" stroke="${border}"/><rect x="8" y="8" width="38" height="38" rx="6" fill="${accentBg}"/><text x="27" y="33" text-anchor="middle" fill="${accentText}" font-family="system-ui,sans-serif" font-weight="700" font-size="16">⚡</text><text x="54" y="24" fill="${subtext}" font-family="system-ui,sans-serif" font-size="10" font-weight="500">${label}</text><text x="54" y="39" fill="${text}" font-family="system-ui,sans-serif" font-size="13" font-weight="700">AI Directory</text></svg>`)}`;
+  return `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="200" height="54" fill="none"><rect width="199" height="53" x=".5" y=".5" rx="7" fill="${bg}" stroke="${border}"/><rect x="8" y="8" width="38" height="38" rx="6" fill="${accentBg}"/><text x="27" y="33" text-anchor="middle" fill="${accentText}" font-family="system-ui,sans-serif" font-weight="700" font-size="16">⚖️</text><text x="54" y="24" fill="${subtext}" font-family="system-ui,sans-serif" font-size="10" font-weight="500">${label}</text><text x="54" y="39" fill="${text}" font-family="system-ui,sans-serif" font-size="13" font-weight="700">AI Legal Tools</text></svg>`)}`;
 }
 
 export function BadgeEmbed({ toolSlug, toolName, featured }: { toolSlug: string; toolName: string; featured: boolean }) {
@@ -28,9 +28,9 @@ export function BadgeEmbed({ toolSlug, toolName, featured }: { toolSlug: string;
   const toolUrl = `${SITE_URL}/tool/${toolSlug}`;
   const label = featured ? "Featured on" : "Listed on";
 
-  const htmlSnippet = `<a href="${toolUrl}" target="_blank" rel="noopener" title="${toolName} on AI Directory"><img src="${SITE_URL}/badges/${theme}${featured ? "-featured" : ""}.svg" alt="${label} AI Directory" width="200" height="54" /></a>`;
+  const htmlSnippet = `<a href="${toolUrl}" target="_blank" rel="noopener" title="${toolName} on AI Legal Tools"><img src="${SITE_URL}/badges/${theme}${featured ? "-featured" : ""}.svg" alt="${label} AI Legal Tools" width="200" height="54" /></a>`;
 
-  const markdownSnippet = `[![${label} AI Directory](${SITE_URL}/badges/${theme}${featured ? "-featured" : ""}.svg)](${toolUrl})`;
+  const markdownSnippet = `[![${label} AI Legal Tools](${SITE_URL}/badges/${theme}${featured ? "-featured" : ""}.svg)](${toolUrl})`;
 
   function copyToClipboard(text: string, id: string) {
     navigator.clipboard.writeText(text);
@@ -74,7 +74,7 @@ export function BadgeEmbed({ toolSlug, toolName, featured }: { toolSlug: string;
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={getBadgeSvg(toolName, featured, theme)}
-          alt={`${label} AI Directory`}
+          alt={`${label} AI Legal Tools`}
           width={200}
           height={54}
         />

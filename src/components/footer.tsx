@@ -7,10 +7,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-              <span className="text-xl">⚡</span> AI Directory
+              <span className="text-xl">⚖️</span> AI Legal Tools
             </Link>
             <p className="mt-2 text-sm text-[var(--muted-foreground)]">
-              Every AI tool. One search. Curated, honest, updated daily.
+              Every legal AI tool. Vetted by professionals. Updated weekly.
             </p>
           </div>
           <div>
@@ -28,10 +28,10 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-3 text-sm">Popular Categories</h3>
             <ul className="space-y-2 text-sm text-[var(--muted-foreground)]">
-              <li><Link href="/category/writing" className="hover:text-[var(--foreground)]">AI Writing</Link></li>
-              <li><Link href="/category/image-generation" className="hover:text-[var(--foreground)]">AI Image</Link></li>
-              <li><Link href="/category/coding" className="hover:text-[var(--foreground)]">AI Coding</Link></li>
-              <li><Link href="/category/chatbots" className="hover:text-[var(--foreground)]">AI Chatbots</Link></li>
+              <li><Link href="/category/contract-review" className="hover:text-[var(--foreground)]">Contract Review</Link></li>
+              <li><Link href="/category/legal-research" className="hover:text-[var(--foreground)]">Legal Research</Link></li>
+              <li><Link href="/category/document-automation" className="hover:text-[var(--foreground)]">Document Automation</Link></li>
+              <li><Link href="/category/e-discovery" className="hover:text-[var(--foreground)]">E-Discovery</Link></li>
             </ul>
           </div>
           <div>
@@ -42,7 +42,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-[var(--muted-foreground)]">
-          &copy; {new Date().getFullYear()} AI Directory. All rights reserved.
+          &copy; {new Date().getFullYear()} AI Legal Tools. All rights reserved.
         </div>
       </div>
     </footer>

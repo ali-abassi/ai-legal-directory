@@ -4,21 +4,21 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "AI Tools Directory — Find the Best AI Tools for Any Task",
+  title: "AI Legal Tools Directory — Find the Best AI Tools for Law",
   description:
-    "Browse 100+ AI tools organized by use case. Compare pricing, read honest reviews, and find the right AI tool in seconds. Updated daily.",
+    "Browse 50+ AI tools built for legal professionals. Contract review, legal research, document automation, compliance. Vetted for security. Updated weekly.",
   keywords: [
-    "ai tools",
-    "best ai tools",
-    "ai tools directory",
-    "ai tool finder",
-    "ai software",
-    "ai apps",
+    "legal ai tools",
+    "ai for lawyers",
+    "ai legal software",
+    "legal technology ai",
+    "ai tools for law firms",
+    "ai contract review",
   ],
   openGraph: {
-    title: "AI Tools Directory — Find the Best AI Tools for Any Task",
+    title: "AI Legal Tools Directory — Find the Best AI Tools for Law",
     description:
-      "Browse 100+ AI tools organized by use case. Compare pricing, read honest reviews, and find the right AI tool in seconds.",
+      "Browse 50+ AI tools built for legal professionals. Contract review, legal research, document automation, compliance. Vetted for security.",
     type: "website",
   },
 };

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Mail, CheckCircle, Loader2 } from "lucide-react";
 
 // Change this to the actual Buttondown username once account is created
-const BUTTONDOWN_USERNAME = "aidirectory";
+const BUTTONDOWN_USERNAME = "ailegaltools";
 
 interface NewsletterSignupProps {
   variant: "homepage" | "blog" | "tool";
@@ -12,25 +12,25 @@ interface NewsletterSignupProps {
 
 const copy = {
   homepage: {
-    headline: "Get the 3 best AI tools of the week. Every Tuesday.",
+    headline: "The Legal AI Briefing. Monthly.",
     subtext:
-      "One email. Three tested picks. No spam, no hype, no \"exclusive deal\" that's just an ad.",
+      "New legal AI tools, security updates, and practice-area insights. Built for lawyers, not tech enthusiasts.",
     button: "Subscribe — Free",
-    finePrint: "One email per week. Unsubscribe anytime.",
+    finePrint: "One email per month. Unsubscribe anytime.",
   },
   blog: {
     headline: "Like this kind of analysis?",
     subtext:
-      "We send one email every Tuesday with 3 AI tools worth trying — tested, honest, and actually useful. Same voice as the blog, straight to your inbox.",
-    button: "Get Weekly Picks",
-    finePrint: "Free. One email/week. No spam.",
+      "We send a monthly briefing covering new legal AI tools, compliance updates, and practice-area insights. Same voice as the blog, straight to your inbox.",
+    button: "Get Monthly Briefing",
+    finePrint: "Free. Monthly. No spam.",
   },
   tool: {
-    headline: "Never miss a good AI tool.",
+    headline: "Stay current on legal AI tools.",
     subtext:
-      "Every Tuesday, we pick the 3 best tools we found that week. Curated by the same team that built this directory.",
+      "Monthly briefing on the best legal AI tools, security updates, and what matters for your practice.",
     button: "Subscribe Free",
-    finePrint: "Weekly. No spam. Unsubscribe anytime.",
+    finePrint: "Monthly. No spam. Unsubscribe anytime.",
   },
 };
 

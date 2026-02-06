@@ -5,6 +5,8 @@ import { ArrowLeft, ExternalLink, Star, DollarSign } from "lucide-react";
 import { collections } from "@/data/collections";
 import { tools } from "@/data/tools";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return collections.map((c) => ({ slug: c.slug }));
 }

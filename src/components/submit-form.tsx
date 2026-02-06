@@ -27,7 +27,7 @@ export function SubmitForm() {
       `Tool Name: ${formData.toolName}\nWebsite: ${formData.url}\nCategory: ${formData.category}\nPricing: ${formData.pricing}\nDescription: ${formData.description}\nContact Email: ${formData.email}\nInterested in Featured: ${formData.featured ? "Yes" : "No"}`
     );
 
-    window.open(`mailto:submit@aidirectory.tools?subject=${subject}&body=${body}`, "_self");
+    window.open(`mailto:submit@ailegal.team?subject=${subject}&body=${body}`, "_self");
     setSubmitted(true);
   }
 

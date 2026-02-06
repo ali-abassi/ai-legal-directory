@@ -1,158 +1,81 @@
 export interface Category {
   slug: string;
   name: string;
-  description: string; // 2-3 sentences intro
-  whatToLookFor: string; // 1-2 sentences
-  icon: string; // emoji
-  toolCount?: number; // will be computed
+  description: string;
+  whatToLookFor: string;
+  icon: string;
+  toolCount?: number;
 }
 
 export const categories: Category[] = [
   {
-    slug: "writing",
-    name: "AI Writing Tools",
-    description: "Tools that help you write faster, better, or both. From long-form blog posts to ad copy to email sequences — these handle the blank-page problem so you can focus on ideas, not first drafts.",
-    whatToLookFor: "The best writing tools let you control tone and style, not just generate generic text. Look for custom voice training, solid editing features, and transparent pricing after the free tier ends.",
-    icon: "✍️"
+    slug: "contract-review",
+    name: "Contract Review & Analysis",
+    description: "AI tools that review, analyze, redline, and extract data from contracts. From due diligence acceleration to obligation tracking, these platforms handle the labor-intensive parts of contract work so lawyers can focus on negotiation strategy and risk assessment.",
+    whatToLookFor: "Accuracy on your contract types matters more than feature count. Test with your actual agreements — M&A due diligence needs different AI than SaaS contract review. Check jurisdiction support, integration with your DMS, and whether the AI explains its reasoning or just highlights clauses.",
+    icon: "📝",
   },
   {
-    slug: "image-generation",
-    name: "AI Image Generators",
-    description: "Turn text prompts into images, illustrations, and designs. Whether you need product mockups, social media graphics, or concept art, these tools generate visuals in seconds instead of hours.",
-    whatToLookFor: "Quality varies wildly. Test with your actual use case — marketing images need different capabilities than artistic work. Pay attention to commercial usage rights and output resolution.",
-    icon: "🎨"
+    slug: "legal-research",
+    name: "Legal Research",
+    description: "AI-powered case law, statute, and regulation research tools. These platforms go beyond keyword search — they understand legal concepts, validate citations, and surface relevant authority you might miss with traditional research methods.",
+    whatToLookFor: "Citation accuracy is non-negotiable. A research tool that hallucinates case citations is worse than useless — it's malpractice risk. Check Shepard's/KeyCite integration, jurisdiction coverage, and whether the AI distinguishes between binding and persuasive authority.",
+    icon: "🔍",
   },
   {
-    slug: "video",
-    name: "AI Video Tools",
-    description: "Generate, edit, and enhance video without a production team. Text-to-video, automated captions, background removal, avatar presenters — the category is moving fast.",
-    whatToLookFor: "Rendering quality and speed are the big differentiators. Cheaper tools often produce obvious AI artifacts. Pay close attention to output resolution and whether results look professional enough.",
-    icon: "🎬"
+    slug: "document-automation",
+    name: "Document Automation & Drafting",
+    description: "Draft generation, template automation, clause libraries, and form completion tools. These platforms turn repetitive document creation into a guided, automated process — from intake questionnaires to finished filings.",
+    whatToLookFor: "Conditional logic and jurisdiction-specific forms are the differentiators. The best tools handle complex document assembly with branching logic, not just mail merge. Check court form coverage for your jurisdiction and how easy templates are to build and maintain.",
+    icon: "📄",
   },
   {
-    slug: "audio",
-    name: "AI Audio & Music Tools",
-    description: "Create music, voiceovers, sound effects, and audio from text descriptions. Useful for content creators, game devs, podcasters, and anyone who needs audio without hiring talent.",
-    whatToLookFor: "Licensing is the hidden landmine. Some tools generate royalty-free output, others don't. If using commercially, read the terms. Also check output length limits on free tiers.",
-    icon: "🎵"
+    slug: "compliance",
+    name: "Compliance & Regulatory",
+    description: "Compliance monitoring, regulatory change tracking, risk assessment, and policy management tools. AI that watches the regulatory landscape so your compliance team can focus on implementation instead of monitoring.",
+    whatToLookFor: "Coverage of your specific regulatory framework matters most. A tool that tracks SOC 2 brilliantly is useless if you need GDPR. Check update frequency, how quickly new regulations are incorporated, and whether alerts are actionable or just noise.",
+    icon: "⚖️",
   },
   {
-    slug: "coding",
-    name: "AI Coding Tools",
-    description: "Write code faster, debug smarter, and automate the tedious parts. These tools range from autocomplete assistants that sit in your editor to full agents that build features from a description.",
-    whatToLookFor: "Integration matters more than raw capability. The best coding tools plug into your existing workflow — your IDE, your repo, your language. Check supported languages and project context understanding.",
-    icon: "💻"
+    slug: "e-discovery",
+    name: "E-Discovery",
+    description: "Document review, predictive coding, technology-assisted review (TAR), and data classification platforms. AI that cuts through massive document sets to find what matters — reducing review costs by 50-80% compared to manual review.",
+    whatToLookFor: "Processing speed and review accuracy are the key metrics. Test with a sample dataset from a real matter. Check pricing models carefully — per-GB, per-matter, and per-user models produce wildly different costs depending on your case mix.",
+    icon: "🗂️",
   },
   {
-    slug: "chatbots",
-    name: "AI Chatbots",
-    description: "Conversational AI for customer support, internal knowledge bases, lead generation, and personal assistance. From simple Q&A bots to sophisticated agents that take actions on your behalf.",
-    whatToLookFor: "The gap between 'impressive demo' and 'actually useful in production' is huge. Test with your real questions. Check integration options, response accuracy, and how it handles unknowns.",
-    icon: "💬"
+    slug: "billing",
+    name: "Billing & Time Tracking",
+    description: "AI-assisted time entry, billing optimization, automated timesheet generation, and revenue recovery tools. These platforms capture billable time that would otherwise be lost — most firms recover 10-30% more billable hours with AI time tracking.",
+    whatToLookFor: "Integration with your practice management software is critical. The best AI billing tools run in the background, capturing time from email, documents, and calendar without requiring manual entry. Check how it handles narrative generation and billing guideline compliance.",
+    icon: "⏱️",
   },
   {
-    slug: "agents",
-    name: "AI Agents",
-    description: "Autonomous AI systems that can plan, execute multi-step tasks, and interact with tools and APIs. The cutting edge of AI — agents that do work, not just answer questions.",
-    whatToLookFor: "Reliability matters more than capability claims. An agent that completes 80% of tasks correctly beats one that attempts 100% but fails unpredictably. Check error handling and human oversight options.",
-    icon: "🤖"
+    slug: "practice-management",
+    name: "Practice Management",
+    description: "AI-enhanced firm operations, matter management, client intake, calendaring, and workflow automation. The central nervous system of a modern law practice — now with AI that automates the administrative overhead lawyers hate.",
+    whatToLookFor: "The best practice management AI is invisible — it handles deadlines, document organization, and client communication without you thinking about it. Prioritize platforms where AI is deeply integrated, not bolted on as a chatbot. Check mobile apps, client portal quality, and migration support from your current system.",
+    icon: "🏢",
   },
   {
-    slug: "business",
-    name: "AI Business Tools",
-    description: "AI-powered tools for meeting notes, document management, project planning, and general business operations. Automate the administrative overhead so teams can focus on actual work.",
-    whatToLookFor: "Privacy and data handling are critical. Business tools often need access to sensitive company data. Check where data goes, whether it's used for training, and compliance certifications.",
-    icon: "💼"
+    slug: "ip-patent",
+    name: "IP & Patent",
+    description: "Patent search, prior art analysis, trademark monitoring, IP portfolio management, and patentability assessment tools. AI that handles the massive search and analysis workload in IP practice — from freedom-to-operate searches to competitive patent landscapes.",
+    whatToLookFor: "Database coverage and search quality are everything. Check which patent offices are covered, how current the data is, and whether the AI understands claim language (not just keywords). For trademark tools, verify international class coverage and monitoring alert quality.",
+    icon: "💡",
   },
   {
-    slug: "marketing",
-    name: "AI Marketing Tools",
-    description: "Automate campaigns, generate ad copy, optimize SEO, analyze competitors, and personalize outreach. Tools covering the full marketing stack from content to analytics.",
-    whatToLookFor: "Ignore the '10x your results' promises. Focus on which specific part of your workflow they speed up. The best tools save time on repetitive tasks, not replace your strategy.",
-    icon: "📣"
+    slug: "litigation",
+    name: "Litigation Support & Analytics",
+    description: "Case analysis, outcome prediction, judge analytics, deposition preparation, and trial support tools. AI that gives litigators data-driven insights on judges, opposing counsel, and case outcomes to inform strategy.",
+    whatToLookFor: "Predictive accuracy and data recency matter most. Check how the tool handles your specific court and practice area — analytics based on federal patent cases won't help with state family law. Verify the underlying dataset size and how frequently it's updated.",
+    icon: "⚔️",
   },
   {
-    slug: "data",
-    name: "AI Data & Analytics Tools",
-    description: "Analyze datasets, generate visualizations, predict trends, and extract insights without writing code. Making data science accessible to analysts and business users.",
-    whatToLookFor: "Check what data sources it connects to and how it handles data privacy. The best tools explain their analysis, not just output charts. Verify accuracy with known datasets before trusting results.",
-    icon: "📊"
+    slug: "intake",
+    name: "Legal Intake & Client Communication",
+    description: "Client intake automation, virtual receptionists, legal chatbots, and appointment scheduling tools. AI that captures leads 24/7, qualifies potential clients, and handles the initial communication that most firms miss after hours.",
+    whatToLookFor: "Response quality and ethical compliance are critical. Legal intake bots must avoid giving legal advice while still being helpful. Check integration with your practice management system, after-hours handling, and whether the AI knows when to escalate to a human.",
+    icon: "💬",
   },
-  {
-    slug: "design",
-    name: "AI Design Tools",
-    description: "From logos to slide decks to UI mockups — design tools that help non-designers produce professional-looking work, and help actual designers move faster.",
-    whatToLookFor: "Templates and customization depth. The worst design tools produce output that screams 'AI-generated.' The best give you a strong starting point you can actually make your own.",
-    icon: "🎯"
-  },
-  {
-    slug: "education",
-    name: "AI Education Tools",
-    description: "Personalized tutoring, course creation, study aids, and learning management. AI that adapts to how you learn and helps educators scale their impact.",
-    whatToLookFor: "Look for adaptive learning that actually responds to your level, not just pre-set difficulty tiers. Check accuracy of explanations — AI tutors can confidently teach wrong things.",
-    icon: "📚"
-  },
-  {
-    slug: "finance",
-    name: "AI Finance Tools",
-    description: "Portfolio analysis, expense tracking, financial forecasting, and automated bookkeeping. AI bringing institutional-grade financial analysis to individuals and small businesses.",
-    whatToLookFor: "Never blindly trust AI financial advice. The best tools augment your decision-making with data, not replace it. Check regulatory compliance and how the tool handles sensitive financial data.",
-    icon: "💰"
-  },
-  {
-    slug: "healthcare",
-    name: "AI Healthcare Tools",
-    description: "Medical research, symptom analysis, clinical documentation, and patient engagement. AI tools designed to support — not replace — healthcare professionals.",
-    whatToLookFor: "HIPAA compliance and clinical validation are non-negotiable. Check if the tool is FDA-cleared for clinical use or intended as informational only. Never use unvalidated AI for medical decisions.",
-    icon: "🏥"
-  },
-  {
-    slug: "legal",
-    name: "AI Legal Tools",
-    description: "Contract review, legal research, document drafting, and compliance monitoring. AI that handles the grunt work of legal practice so lawyers can focus on strategy and counsel.",
-    whatToLookFor: "Accuracy is everything in legal. Check hallucination rates, source citation, and whether the tool is designed for your jurisdiction. Always have a human lawyer review AI-generated legal work.",
-    icon: "⚖️"
-  },
-  {
-    slug: "productivity",
-    name: "AI Productivity Tools",
-    description: "Meeting summaries, email drafting, task management, document analysis, and workflow automation. Tools that handle the busywork so you spend time on work that matters.",
-    whatToLookFor: "Privacy and data handling. Productivity tools often need access to your email, calendar, and documents. Check where your data goes, whether it's used for training, and what happens when you cancel.",
-    icon: "⚡"
-  },
-  {
-    slug: "research",
-    name: "AI Research Tools",
-    description: "Summarize papers, search academic databases, analyze datasets, extract insights from documents, and synthesize findings across sources. Built for people who need to go deep quickly.",
-    whatToLookFor: "Source citation is non-negotiable. Any research tool that gives answers without showing where they came from is a liability. Check whether it links to primary sources and handles conflicting information.",
-    icon: "🔬"
-  },
-  {
-    slug: "social",
-    name: "AI Social Media Tools",
-    description: "Content scheduling, caption generation, trend analysis, and audience engagement. AI that helps you maintain a consistent social presence without living on every platform.",
-    whatToLookFor: "The best social tools understand platform-specific nuances — what works on LinkedIn bombs on TikTok. Look for multi-platform support and analytics that actually inform your strategy.",
-    icon: "📱"
-  },
-  {
-    slug: "sales",
-    name: "AI Sales Tools",
-    description: "Lead scoring, email outreach, CRM automation, and conversation intelligence. AI that helps sales teams find better prospects and close faster.",
-    whatToLookFor: "Integration with your existing CRM is critical. The best sales AI enriches your current workflow rather than requiring a whole new process. Check data accuracy for lead enrichment.",
-    icon: "🎯"
-  },
-  {
-    slug: "customer-service",
-    name: "AI Customer Service Tools",
-    description: "Automated support, ticket routing, sentiment analysis, and self-service knowledge bases. AI that handles routine inquiries so your team can focus on complex issues.",
-    whatToLookFor: "Escalation handling is the make-or-break feature. The best tools know when to hand off to a human. Check customization options and how well the AI understands your specific product/domain.",
-    icon: "🎧"
-  },
-  {
-    slug: "security",
-    name: "AI Security & Compliance Tools",
-    description: "Threat detection, vulnerability scanning, compliance monitoring, and security automation. AI that helps organizations stay ahead of threats and meet regulatory requirements.",
-    whatToLookFor: "False positive rates matter as much as detection rates. The best security tools reduce alert fatigue, not add to it. Check integration with your existing security stack and compliance framework coverage.",
-    icon: "🔒"
-  }
-]
+];

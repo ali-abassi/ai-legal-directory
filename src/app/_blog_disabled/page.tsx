@@ -4,9 +4,9 @@ import { blogPosts } from "@/data/blog-posts";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog — AI Tools Directory",
+  title: "Blog — AI Legal Tools Directory",
   description:
-    "Guides, comparisons, and insights on AI tools. Updated weekly with practical advice on choosing and using AI tools.",
+    "Guides, comparisons, and insights on legal AI tools. Updated with practical advice for lawyers and legal professionals.",
 };
 
 export default function BlogPage() {
