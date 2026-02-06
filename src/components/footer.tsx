@@ -22,6 +22,7 @@ export function Footer() {
               <li><Link href="/new" className="hover:text-[var(--foreground)]">New Tools</Link></li>
               <li><Link href="/free" className="hover:text-[var(--foreground)]">Free Tools</Link></li>
               <li><Link href="/blog" className="hover:text-[var(--foreground)]">Blog</Link></li>
+              <li><Link href="/collections" className="hover:text-[var(--foreground)]">Collections</Link></li>
             </ul>
           </div>
           <div>
