@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, ArrowRight, Scale, Shield, Eye } from "lucide-react";
+import { Search, ArrowRight, Activity, Shield, Eye } from "lucide-react";
 import { tools } from "@/data/tools";
 import { categories } from "@/data/categories";
 import { ToolCard } from "@/components/tool-card";
@@ -16,21 +16,21 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-b bg-gradient-to-b from-[var(--accent)]/50 to-[var(--background)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
-            Every legal AI tool.{" "}
-            <span className="text-[var(--primary)]">Vetted by professionals.</span>
+            Every medical AI tool.{" "}
+            <span className="text-[var(--primary)]">Vetted for clinical use.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-[var(--muted-foreground)]">
-            The legal AI market is exploding — but finding the right tool for your practice
+            The medical AI market is exploding — but finding the right tool for your practice
             is harder than it should be. We catalog, vet, and honestly review AI tools built
-            specifically for legal work. Contract review, legal research, document drafting,
-            compliance, e-discovery — find what fits your practice in minutes.
+            specifically for healthcare. Clinical decision support, diagnostics, medical imaging,
+            patient engagement — find what fits your practice in minutes.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/search"
               className="inline-flex items-center gap-2 rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-semibold text-[var(--primary-foreground)] shadow-lg hover:opacity-90 transition"
             >
-              <Search className="h-4 w-4" /> Browse Legal AI Tools
+              <Search className="h-4 w-4" /> Browse Medical AI Tools
             </Link>
             <Link
               href="/submit"
@@ -53,29 +53,28 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="rounded-xl border bg-[var(--card)] p-6">
-            <Scale className="h-8 w-8 text-[var(--primary)]" />
-            <h3 className="mt-4 font-semibold text-lg">Built for legal professionals, not tech enthusiasts</h3>
+            <Activity className="h-8 w-8 text-[var(--primary)]" />
+            <h3 className="mt-4 font-semibold text-lg">Built for healthcare professionals, not tech enthusiasts</h3>
             <p className="mt-2 text-sm text-[var(--muted-foreground)]">
-              This isn&apos;t a general AI directory with a &quot;legal&quot; filter. Every tool here is
-              purpose-built for legal work. We understand the difference between contract analysis and
-              contract management — and we categorize accordingly.
+              This isn&apos;t a general AI directory with a &quot;medical&quot; filter. Every tool here is
+              purpose-built for healthcare. We understand the difference between clinical decision support and
+              diagnostic imaging — and we categorize accordingly.
             </p>
           </div>
           <div className="rounded-xl border bg-[var(--card)] p-6">
             <Shield className="h-8 w-8 text-[var(--primary)]" />
-            <h3 className="mt-4 font-semibold text-lg">Vetted for security and compliance</h3>
+            <h3 className="mt-4 font-semibold text-lg">Vetted for HIPAA compliance and security</h3>
             <p className="mt-2 text-sm text-[var(--muted-foreground)]">
-              Legal work demands data security. We flag each tool&apos;s SOC 2 status, data handling
-              practices, and whether it&apos;s suitable for privileged communications. Because your
-              client data isn&apos;t optional.
+              Healthcare demands data security. We flag each tool&apos;s HIPAA compliance, FDA clearance status,
+              and data handling practices. Because patient data protection isn&apos;t optional.
             </p>
           </div>
           <div className="rounded-xl border bg-[var(--card)] p-6">
             <Eye className="h-8 w-8 text-[var(--primary)]" />
-            <h3 className="mt-4 font-semibold text-lg">Honest about limitations</h3>
+            <h3 className="mt-4 font-semibold text-lg">Honest about clinical validation</h3>
             <p className="mt-2 text-sm text-[var(--muted-foreground)]">
-              AI in law has real constraints — hallucinated citations, jurisdiction gaps, confidentiality
-              risks. We document what each tool does well and where it falls short. No vendor fluff.
+              AI in healthcare has real constraints — validation requirements, regulatory approvals, clinical evidence.
+              We document what each tool does well and where it falls short. No vendor fluff.
             </p>
           </div>
         </div>
@@ -129,16 +128,16 @@ export default function HomePage() {
       <section className="border-t bg-[var(--muted)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 text-center">
           <p className="text-[var(--muted-foreground)]">
-            Trusted by lawyers, paralegals, and legal ops teams finding the right AI tools for their practice.
+            Trusted by physicians, nurses, and healthcare administrators finding the right AI tools for their practice.
           </p>
         </div>
       </section>
 
       {/* Bottom CTA */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h2 className="text-2xl font-bold">Built a legal AI tool?</h2>
+        <h2 className="text-2xl font-bold">Built a medical AI tool?</h2>
         <p className="mt-3 text-[var(--muted-foreground)]">
-          If it&apos;s genuinely useful for legal professionals, we want it in the directory.
+          If it&apos;s genuinely useful for healthcare professionals, we want it in the directory.
           Listing is free.
         </p>
         <Link

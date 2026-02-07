@@ -7,10 +7,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-              <span className="text-xl">⚖️</span> AI Legal Tools
+              <span className="text-xl">🏥</span> AI Medical Tools
             </Link>
             <p className="mt-2 text-sm text-[var(--muted-foreground)]">
-              Every legal AI tool. Vetted by professionals. Updated weekly.
+              Every medical AI tool. Vetted for clinical use. Updated weekly.
             </p>
           </div>
           <div>
@@ -28,10 +28,10 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-3 text-sm">Popular Categories</h3>
             <ul className="space-y-2 text-sm text-[var(--muted-foreground)]">
-              <li><Link href="/category/contract-review" className="hover:text-[var(--foreground)]">Contract Review</Link></li>
-              <li><Link href="/category/legal-research" className="hover:text-[var(--foreground)]">Legal Research</Link></li>
-              <li><Link href="/category/document-automation" className="hover:text-[var(--foreground)]">Document Automation</Link></li>
-              <li><Link href="/category/e-discovery" className="hover:text-[var(--foreground)]">E-Discovery</Link></li>
+              <li><Link href="/category/clinical-decision-support" className="hover:text-[var(--foreground)]">Clinical Decision Support</Link></li>
+              <li><Link href="/category/diagnostics" className="hover:text-[var(--foreground)]">Diagnostics</Link></li>
+              <li><Link href="/category/medical-imaging" className="hover:text-[var(--foreground)]">Medical Imaging</Link></li>
+              <li><Link href="/category/patient-engagement" className="hover:text-[var(--foreground)]">Patient Engagement</Link></li>
             </ul>
           </div>
           <div>
@@ -42,7 +42,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-[var(--muted-foreground)]">
-          &copy; {new Date().getFullYear()} AI Legal Tools. All rights reserved.
+          &copy; {new Date().getFullYear()} AI Medical Tools. All rights reserved.
         </div>
       </div>
     </footer>

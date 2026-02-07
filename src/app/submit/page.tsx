@@ -3,19 +3,19 @@ import { Check } from "lucide-react";
 import { SubmitForm } from "@/components/submit-form";
 
 export const metadata: Metadata = {
-  title: "Submit Your Legal AI Tool — Get Listed",
+  title: "Submit Your Medical AI Tool — Get Listed",
   description:
-    "List your legal AI tool for free. Reach lawyers, paralegals, and legal ops teams actively evaluating AI solutions.",
+    "List your medical AI tool for free. Reach physicians, nurses, and healthcare administrators actively evaluating AI solutions.",
 };
 
 export default function SubmitPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
       <h1 className="text-3xl font-bold">
-        Get your legal AI tool in front of the professionals who need it.
+        Get your medical AI tool in front of the professionals who need it.
       </h1>
       <p className="mt-3 text-[var(--muted-foreground)] text-lg">
-        Lawyers and legal ops teams come here specifically looking for AI tools. If yours
+        Physicians and healthcare administrators come here specifically looking for AI tools. If yours
         solves a real problem, they&apos;ll find it.
       </p>
 
@@ -55,8 +55,8 @@ export default function SubmitPage() {
               "Priority placement in your category",
               '"Featured" badge on your listing',
               "Detailed profile with screenshots, demo video, and case studies",
-              "Security & compliance details (SOC 2, BAA, data residency)",
-              'Included in our monthly "Legal AI Briefing" newsletter',
+              "Security & compliance details (HIPAA, FDA clearance, data residency)",
+              'Included in our monthly "Medical AI Briefing" newsletter',
               "Analytics: impressions, clicks, referral traffic",
               "Comparison inclusion (appear in relevant vs pages)",
             ].map((item) => (
@@ -95,9 +95,9 @@ export default function SubmitPage() {
       <div className="mt-12 rounded-xl border bg-[var(--muted)] p-8">
         <h2 className="text-xl font-bold">Why list here?</h2>
         <p className="mt-3 text-[var(--muted-foreground)] leading-relaxed">
-          Legal technology buyers are methodical — they research before they buy. This directory
+          Healthcare technology buyers are methodical — they research before they buy. This directory
           is where that research starts. Unlike general AI directories, our audience is exclusively
-          legal professionals with purchasing authority or influence. The traffic is smaller but
+          healthcare professionals with purchasing authority or influence. The traffic is smaller but
           the intent is 10x higher.
         </p>
       </div>
